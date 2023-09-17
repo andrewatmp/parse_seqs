@@ -1,0 +1,1 @@
+load_data(3,["d__Bacteria;p__Actinobacteriota;c__Actinomycetia", "d__Bacteria;p__Firmicutes_D;c__Bacilli"],["index", "d__Bacteria;p__Actinobacteriota;c__Actinomycetia", "d__Bacteria;p__Firmicutes_D;c__Bacilli"],[{"index":"B10","d__Bacteria;p__Actinobacteriota;c__Actinomycetia":770.0,"d__Bacteria;p__Firmicutes_D;c__Bacilli":225.0}]);

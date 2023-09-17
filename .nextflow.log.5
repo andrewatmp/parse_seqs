@@ -1,0 +1,313 @@
+Sep-08 09:07:17.248 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker
+Sep-08 09:07:17.287 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+Sep-08 09:07:17.296 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/asum/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+Sep-08 09:07:17.301 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-08 09:07:17.301 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-08 09:07:17.303 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-08 09:07:17.307 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-08 09:07:17.316 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/nextflow.config
+Sep-08 09:07:17.316 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/nextflow.config
+Sep-08 09:07:17.328 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-08 09:07:17.602 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, mamba, conda, arm, docker]
+Sep-08 09:07:17.620 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Sep-08 09:07:17.630 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [berserk_mayer] DSL2 - revision: 95b20e0e17
+Sep-08 09:07:17.631 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-08 09:07:17.631 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-08 09:07:17.637 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/asum/.nextflow/secrets/store.json
+Sep-08 09:07:17.639 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@69fe0ed4] - activable => nextflow.secret.LocalSecretsProvider@69fe0ed4
+Sep-08 09:07:17.669 [main] DEBUG nextflow.Session - Session UUID: fbf573e9-b6ca-440a-88a6-052145670651
+Sep-08 09:07:17.669 [main] DEBUG nextflow.Session - Run name: berserk_mayer
+Sep-08 09:07:17.670 [main] DEBUG nextflow.Session - Executor pool size: 20
+Sep-08 09:07:17.676 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=60; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-08 09:07:17.687 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (14-04-2023 23:51 PDT)
+  System: Linux 6.2.0-32-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 20-internal-adhoc..src
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 75480@bioinfo [127.0.1.1]
+  CPUs: 20 - Mem: 46.8 GB (33.1 GB) - Swap: 8 GB (8 GB)
+Sep-08 09:07:17.698 [main] DEBUG nextflow.Session - Work-dir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work [ext2/ext3]
+Sep-08 09:07:17.707 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-08 09:07:17.712 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-08 09:07:17.722 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-08 09:07:17.727 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 21; maxThreads: 1000
+Sep-08 09:07:17.783 [main] DEBUG nextflow.Session - Session start
+Sep-08 09:07:18.097 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-08 09:07:18.105 [main] INFO  nextflow.Nextflow - MP - Q I I M E   P I P E L I N E
+===================================
+Reads        : /home/asum/sequencing/20230906_iontorrent/parse_seqs2/*.seqs
+Trunc Len    : 415
+Min Reads    : 100
+
+Sep-08 09:07:18.106 [main] INFO  nextflow.script.BaseScript - reads: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/*.seqs
+Sep-08 09:07:18.169 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.170 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.172 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-08 09:07:18.175 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=20; memory=46.8 GB; capacity=20; pollInterval=100ms; dumpInterval=5m
+Sep-08 09:07:18.205 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.205 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.209 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.209 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.212 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.213 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.215 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.215 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.223 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.223 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.225 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-08 09:07:18.225 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-08 09:07:18.227 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: IMPORT, MAKETABLE, MINREADS, DADA, DADARESULTS, MULTIQC, BARPLOT, TABULATE, CLASSIFY
+Sep-08 09:07:18.227 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Sep-08 09:07:18.229 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > IMPORT
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DADA
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MINREADS
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DADARESULTS
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLASSIFY
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BARPLOT
+Sep-08 09:07:18.230 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/; pattern: *.seqs; options: [type:dir]
+Sep-08 09:07:18.230 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MAKETABLE
+Sep-08 09:07:18.230 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-08 09:07:18.230 [main] DEBUG nextflow.Session - Session await
+Sep-08 09:07:18.373 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.374 [Task submitter] INFO  nextflow.Session - [ff/c59291] Submitted process > IMPORT (Importing sequences B7_16s)
+Sep-08 09:07:18.378 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.378 [Task submitter] INFO  nextflow.Session - [37/ff4425] Submitted process > IMPORT (Importing sequences B11_16s)
+Sep-08 09:07:18.382 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.382 [Task submitter] INFO  nextflow.Session - [a8/61812d] Submitted process > IMPORT (Importing sequences B4_16s)
+Sep-08 09:07:18.386 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.387 [Task submitter] INFO  nextflow.Session - [02/8d38eb] Submitted process > IMPORT (Importing sequences B9_16s)
+Sep-08 09:07:18.390 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.391 [Task submitter] INFO  nextflow.Session - [f1/d4ce22] Submitted process > IMPORT (Importing sequences B3_16s)
+Sep-08 09:07:18.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.402 [Task submitter] INFO  nextflow.Session - [16/e94361] Submitted process > IMPORT (Importing sequences B2_16s)
+Sep-08 09:07:18.405 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.406 [Task submitter] INFO  nextflow.Session - [41/3c23b9] Submitted process > IMPORT (Importing sequences B8_16s)
+Sep-08 09:07:18.410 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.410 [Task submitter] INFO  nextflow.Session - [e6/e9b475] Submitted process > IMPORT (Importing sequences B6_16s)
+Sep-08 09:07:18.413 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.414 [Task submitter] INFO  nextflow.Session - [db/6c5c1b] Submitted process > IMPORT (Importing sequences B1_16s)
+Sep-08 09:07:18.419 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.419 [Task submitter] INFO  nextflow.Session - [4b/0ecc0c] Submitted process > IMPORT (Importing sequences B5_16s)
+Sep-08 09:07:18.424 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:18.425 [Task submitter] INFO  nextflow.Session - [1b/4598e2] Submitted process > IMPORT (Importing sequences B10_16s)
+Sep-08 09:07:37.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: IMPORT (Importing sequences B5_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/4b/0ecc0c61bd607c75530881e10385b6]
+Sep-08 09:07:37.117 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:37.117 [Task submitter] INFO  nextflow.Session - [be/ed627b] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:37.520 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: IMPORT (Importing sequences B11_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/37/ff44258003201c1797bac03e8159b7]
+Sep-08 09:07:37.526 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:37.526 [Task submitter] INFO  nextflow.Session - [15/292973] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:37.653 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: IMPORT (Importing sequences B8_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/41/3c23b97114dd27b6318c969cab5df6]
+Sep-08 09:07:37.659 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:37.659 [Task submitter] INFO  nextflow.Session - [00/055d27] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:37.817 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: IMPORT (Importing sequences B1_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/db/6c5c1b146f7ab1135e23fbf013cd6b]
+Sep-08 09:07:37.823 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:37.823 [Task submitter] INFO  nextflow.Session - [5d/21ef44] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:38.742 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: IMPORT (Importing sequences B2_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/16/e943612bdf4633c825c2ae7596b227]
+Sep-08 09:07:38.748 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:38.749 [Task submitter] INFO  nextflow.Session - [3b/87c9e7] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:38.799 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: IMPORT (Importing sequences B3_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f1/d4ce22e1cd71d58e55eedb3c1ad7a7]
+Sep-08 09:07:38.809 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:38.812 [Task submitter] INFO  nextflow.Session - [8d/f49180] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:39.681 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: IMPORT (Importing sequences B6_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/e6/e9b4753360e0b3f73f7bc797eee24a]
+Sep-08 09:07:39.688 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:39.688 [Task submitter] INFO  nextflow.Session - [25/172377] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:39.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: IMPORT (Importing sequences B4_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/a8/61812df705bbaae984bcd3ea9bf55b]
+Sep-08 09:07:39.896 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:39.896 [Task submitter] INFO  nextflow.Session - [ee/5727a0] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:40.135 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: IMPORT (Importing sequences B9_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/02/8d38ebed70d0a1d82d622be00434e8]
+Sep-08 09:07:40.140 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:40.141 [Task submitter] INFO  nextflow.Session - [a8/9a87f6] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:40.516 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: IMPORT (Importing sequences B7_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/ff/c59291b22ae44ced5833ad777b90f2]
+Sep-08 09:07:40.520 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:40.521 [Task submitter] INFO  nextflow.Session - [49/6e0cc6] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:07:42.359 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: IMPORT (Importing sequences B10_16s); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/1b/4598e2c0ea8976236882094896f620]
+Sep-08 09:07:42.366 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:07:42.366 [Task submitter] INFO  nextflow.Session - [2c/3c3929] Submitted process > DADA (Dada2 Error Correction)
+Sep-08 09:08:07.951 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/2c/3c392958b9b4053655000780452475]
+Sep-08 09:08:07.963 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:07.963 [Task submitter] INFO  nextflow.Session - [d2/4ce41a] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:07.966 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:07.966 [Task submitter] INFO  nextflow.Session - [cb/0ee74e] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:12.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/00/055d2725636d9ea59a1250bd0c046b]
+Sep-08 09:08:12.974 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:12.974 [Task submitter] INFO  nextflow.Session - [87/80ba75] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:12.976 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:12.976 [Task submitter] INFO  nextflow.Session - [21/515096] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:17.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/cb/0ee74e53bb8293d0784329cb02d58d]
+Sep-08 09:08:17.828 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:17.829 [Task submitter] INFO  nextflow.Session - [4f/6a923c] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:08:22.340 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/87/80ba756422c26ae5f8166c9e5056ef]
+Sep-08 09:08:22.344 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:22.344 [Task submitter] INFO  nextflow.Session - [3e/f3d945] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:08:25.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/49/6e0cc619ba7ee2a6cae89eef9cd830]
+Sep-08 09:08:25.335 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:25.335 [Task submitter] INFO  nextflow.Session - [2f/1f9fd1] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:25.338 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:25.338 [Task submitter] INFO  nextflow.Session - [39/d22722] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:36.082 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/2f/1f9fd181836f64f97e2f31ad2eb9a9]
+Sep-08 09:08:36.089 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:36.090 [Task submitter] INFO  nextflow.Session - [f9/fdadcb] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:08:39.519 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/21/5150961538a703c6bc5ccdba644a64]
+Sep-08 09:08:39.525 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:39.526 [Task submitter] INFO  nextflow.Session - [cc/6cbc13] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:08:40.215 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/d2/4ce41a39765a0fe3736ebf0ad62fbf]
+Sep-08 09:08:40.222 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:40.222 [Task submitter] INFO  nextflow.Session - [07/f0ee54] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:08:43.255 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/15/29297317c1b922bce4491c42992986]
+Sep-08 09:08:43.260 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:43.261 [Task submitter] INFO  nextflow.Session - [d8/b45fd1] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:43.262 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:43.263 [Task submitter] INFO  nextflow.Session - [86/08a0f1] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:48.614 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/4f/6a923cb0330b2b5138c912dcf0af25]
+Sep-08 09:08:51.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/3e/f3d9452e55aa4eaa0d46553dec7b2a]
+Sep-08 09:08:52.064 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/cc/6cbc1300669ccca8a40f8b90740290]
+Sep-08 09:08:52.071 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=60; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-08 09:08:52.089 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:52.089 [Task submitter] INFO  nextflow.Session - [46/752bca] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:08:53.218 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/86/08a0f1b4efa9d229aa4ba9708aeb3d]
+Sep-08 09:08:53.223 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:53.223 [Task submitter] INFO  nextflow.Session - [64/4f8159] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:08:53.874 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/46/752bca4a636cb24d29c474902fe8ce]
+Sep-08 09:08:54.879 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/07/f0ee5478b6a5b7219c38f3524a9339]
+Sep-08 09:08:54.895 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:54.895 [Task submitter] INFO  nextflow.Session - [b7/1e8430] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:08:55.826 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/be/ed627b34f3c0466e003818d4b967a3]
+Sep-08 09:08:55.831 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:55.832 [Task submitter] INFO  nextflow.Session - [cd/800a05] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:55.834 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:55.834 [Task submitter] INFO  nextflow.Session - [f5/b1ad11] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:56.562 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/ee/5727a096a1675a2bb2821e8eb7be6b]
+Sep-08 09:08:56.567 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:56.567 [Task submitter] INFO  nextflow.Session - [50/fca73f] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:08:56.570 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:56.570 [Task submitter] INFO  nextflow.Session - [7b/f1a347] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:08:56.673 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/b7/1e8430802bab2772cf6b1bf61746b5]
+Sep-08 09:08:57.353 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/39/d2272246b7ac977e4ac82d5b29240d]
+Sep-08 09:08:57.360 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:08:57.360 [Task submitter] INFO  nextflow.Session - [6b/cbb24f] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:04.818 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/8d/f49180c2549de55a149db61d2c9ec8]
+Sep-08 09:09:04.822 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:04.823 [Task submitter] INFO  nextflow.Session - [6a/c49e58] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:09:04.824 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:04.824 [Task submitter] INFO  nextflow.Session - [01/bc5f41] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:09:06.579 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/7b/f1a347761feb876818645fd6a08816]
+Sep-08 09:09:06.585 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:06.585 [Task submitter] INFO  nextflow.Session - [d6/40d968] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:09:07.916 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f9/fdadcbbcd3ae5fbbb1cfdd732be8c9]
+Sep-08 09:09:09.922 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f5/b1ad11799a80d6f56e30a1e2931c2f]
+Sep-08 09:09:09.929 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:09.929 [Task submitter] INFO  nextflow.Session - [fe/40c274] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:09:11.430 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/d8/b45fd110d27cd0302a7ad30cb35c1c]
+Sep-08 09:09:11.436 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:11.436 [Task submitter] INFO  nextflow.Session - [54/fbdc6d] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:14.413 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6a/c49e588bb6612db29ed5d93e56126e]
+Sep-08 09:09:14.418 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:14.418 [Task submitter] INFO  nextflow.Session - [ee/42203d] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:09:14.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6b/cbb24f018b33fe948a6ee44704d21f]
+Sep-08 09:09:14.513 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:14.513 [Task submitter] INFO  nextflow.Session - [82/ed1357] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:16.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/82/ed13578be6a2c2a69eb2fb6aff65c9]
+Sep-08 09:09:23.740 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/64/4f8159a9b9e7c81a1d38d386907bf3]
+Sep-08 09:09:23.807 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/54/fbdc6dd98c33ae2948bdbe493df5b7]
+Sep-08 09:09:23.817 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:23.818 [Task submitter] INFO  nextflow.Session - [b2/178a74] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:24.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/a8/9a87f613ffe09e06d9fa697c1cb9df]
+Sep-08 09:09:24.638 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:24.638 [Task submitter] INFO  nextflow.Session - [5d/7655b8] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:09:24.640 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:24.641 [Task submitter] INFO  nextflow.Session - [f3/b20605] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:09:25.357 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/b2/178a74d48e868a3741f80be2efbfcf]
+Sep-08 09:09:26.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/01/bc5f4177ec468cfc7f1a2b2cbdacc8]
+Sep-08 09:09:26.637 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:26.637 [Task submitter] INFO  nextflow.Session - [6f/47f8d1] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:31.762 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/cd/800a05d85f4e02021c640e377ec237]
+Sep-08 09:09:31.768 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:31.768 [Task submitter] INFO  nextflow.Session - [6f/72dcc5] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:33.701 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/d6/40d9684bc77f01ef51e1cd828ebb74]
+Sep-08 09:09:34.002 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f3/b206052b4dffb82227e30b5bb48a1d]
+Sep-08 09:09:34.009 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:34.009 [Task submitter] INFO  nextflow.Session - [d5/31313a] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:09:34.992 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/50/fca73f9368b407286552ebbba2a06e]
+Sep-08 09:09:34.996 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:34.996 [Task submitter] INFO  nextflow.Session - [e8/e701be] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:36.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/fe/40c274451233e879c6e914aad2f283]
+Sep-08 09:09:36.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/3b/87c9e74c531b018db27514c674285d]
+Sep-08 09:09:36.897 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:36.897 [Task submitter] INFO  nextflow.Session - [72/28e175] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:09:36.899 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:36.899 [Task submitter] INFO  nextflow.Session - [92/1ce6fc] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:09:39.230 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6f/47f8d14325d28ef8c4260d835937d6]
+Sep-08 09:09:39.242 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:39.242 [Task submitter] INFO  nextflow.Session - [fa/b26182] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:40.967 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/ee/42203d3e11de46f0b5158d77e166d2]
+Sep-08 09:09:41.046 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/fa/b26182b4396d5623bd7dadf51e3ca4]
+Sep-08 09:09:43.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6f/72dcc50b969e2559d47d6c3f617c6b]
+Sep-08 09:09:43.509 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:43.510 [Task submitter] INFO  nextflow.Session - [6e/4a8d84] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:44.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/5d/7655b8dec31973719bd24290017b6d]
+Sep-08 09:09:44.433 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:44.433 [Task submitter] INFO  nextflow.Session - [2e/7a993c] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:09:44.894 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6e/4a8d84b18087642d5207a2a265d153]
+Sep-08 09:09:45.464 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/72/28e175be2ef4eab2eab589b90f9bb1]
+Sep-08 09:09:45.467 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:45.467 [Task submitter] INFO  nextflow.Session - [9b/9044c8] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:09:46.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/e8/e701be8a8e6d0e952b8928ade8d3cc]
+Sep-08 09:09:46.376 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:46.377 [Task submitter] INFO  nextflow.Session - [80/e4bf6a] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:47.657 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/80/e4bf6a8fef875b8542a0efc16960ba]
+Sep-08 09:09:54.853 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/2e/7a993c5367f3f54ebc2933d16aa630]
+Sep-08 09:09:54.864 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:54.864 [Task submitter] INFO  nextflow.Session - [55/c6d0e4] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:09:55.984 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/55/c6d0e40ef8ab3f0a05185b9bb55726]
+Sep-08 09:09:56.871 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/d5/31313a550ac18098c5e07fb948a2df]
+Sep-08 09:09:59.496 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/92/1ce6fcd559f68d6551df653df78916]
+Sep-08 09:09:59.500 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:09:59.500 [Task submitter] INFO  nextflow.Session - [43/ddf70a] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:10:06.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/9b/9044c8f1080155b2422a7093312de3]
+Sep-08 09:10:09.490 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/43/ddf70a5d9d4c127e76712525874d40]
+Sep-08 09:10:09.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:10:09.497 [Task submitter] INFO  nextflow.Session - [39/6e4516] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:10:10.628 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/39/6e4516df8a2039bb75b8101f1476f7]
+Sep-08 09:10:40.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/25/17237776bc48c5f98508c9ecb6a386]
+Sep-08 09:10:40.773 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:10:40.773 [Task submitter] INFO  nextflow.Session - [f9/6de586] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:10:40.774 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:10:40.774 [Task submitter] INFO  nextflow.Session - [1c/0bba64] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:10:48.065 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f9/6de586e1c0551dc211d7f1ab45e992]
+Sep-08 09:10:48.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:10:48.068 [Task submitter] INFO  nextflow.Session - [c1/53ed0c] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:11:08.165 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/c1/53ed0c20dd410c039c6d84a020b017]
+Sep-08 09:11:12.763 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/1c/0bba648956daba82562c9dbc21ad98]
+Sep-08 09:11:12.766 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:11:12.766 [Task submitter] INFO  nextflow.Session - [a2/e840c4] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:11:22.587 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/a2/e840c47e8d83617d15a48d7955fb75]
+Sep-08 09:11:22.594 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:11:22.594 [Task submitter] INFO  nextflow.Session - [b9/a71ef7] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:11:23.666 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/b9/a71ef761e9d8ac1d5225a3bb84fee5]
+Sep-08 09:11:57.636 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: DADA (Dada2 Error Correction); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/5d/21ef44649c1ef18c20c72a3b970218]
+Sep-08 09:11:57.640 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:11:57.640 [Task submitter] INFO  nextflow.Session - [6a/cf360f] Submitted process > MINREADS (Filtering for min reads)
+Sep-08 09:11:57.641 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:11:57.641 [Task submitter] INFO  nextflow.Session - [8a/0427fb] Submitted process > CLASSIFY (Classify using BLAST)
+Sep-08 09:12:04.901 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: MINREADS (Filtering for min reads); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/6a/cf360f2c37b9b1310e81fb0e7de493]
+Sep-08 09:12:04.904 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:12:04.905 [Task submitter] INFO  nextflow.Session - [f3/ee359a] Submitted process > DADARESULTS (Generate dada visualizations)
+Sep-08 09:12:18.315 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 74; name: CLASSIFY (Classify using BLAST); status: RUNNING; exit: -; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/8a/0427fbe1789e55527c69efa80d9255]
+~> TaskHandler[id: 75; name: DADARESULTS (Generate dada visualizations); status: RUNNING; exit: -; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f3/ee359a651497ded3fb1b38b58eb9ed]
+Sep-08 09:12:25.078 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: DADARESULTS (Generate dada visualizations); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/f3/ee359a651497ded3fb1b38b58eb9ed]
+Sep-08 09:12:28.094 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: CLASSIFY (Classify using BLAST); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/8a/0427fbe1789e55527c69efa80d9255]
+Sep-08 09:12:28.097 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:12:28.098 [Task submitter] INFO  nextflow.Session - [df/403650] Submitted process > BARPLOT (Generate barplot)
+Sep-08 09:12:37.970 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: BARPLOT (Generate barplot); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/df/403650609fa1ff0adc54f70a8214f5]
+Sep-08 09:12:37.984 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-08 09:12:37.984 [Task submitter] INFO  nextflow.Session - [93/8d6b7f] Submitted process > MAKETABLE (Make Table)
+Sep-08 09:12:39.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: MAKETABLE (Make Table); status: COMPLETED; exit: 0; error: -; workDir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work/93/8d6b7fa6f3309d3efedb5b780271d5]
+Sep-08 09:12:39.296 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-08 09:12:39.297 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-08 09:12:39.304 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Sep-08 09:12:39.311 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=77; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=35m 58s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=15; peakCpus=15; peakMemory=0; ]
+Sep-08 09:12:39.384 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-08 09:12:39.391 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-08 09:12:39.391 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

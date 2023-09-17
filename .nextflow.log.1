@@ -1,0 +1,140 @@
+Sep-16 19:01:44.134 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker
+Sep-16 19:01:44.174 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+Sep-16 19:01:44.185 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/asum/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+Sep-16 19:01:44.190 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-16 19:01:44.190 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-16 19:01:44.192 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-16 19:01:44.196 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-16 19:01:44.206 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/nextflow.config
+Sep-16 19:01:44.206 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/nextflow.config
+Sep-16 19:01:44.218 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-16 19:01:44.478 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, mamba, conda, arm, docker]
+Sep-16 19:01:44.492 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Sep-16 19:01:44.504 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [jovial_carlsson] DSL2 - revision: 5815d3fea0
+Sep-16 19:01:44.504 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-16 19:01:44.504 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-16 19:01:44.510 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/asum/.nextflow/secrets/store.json
+Sep-16 19:01:44.512 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@709ed6f3] - activable => nextflow.secret.LocalSecretsProvider@709ed6f3
+Sep-16 19:01:44.546 [main] DEBUG nextflow.Session - Session UUID: 21388d86-bf62-4a90-abe4-1495f6aa0140
+Sep-16 19:01:44.546 [main] DEBUG nextflow.Session - Run name: jovial_carlsson
+Sep-16 19:01:44.546 [main] DEBUG nextflow.Session - Executor pool size: 20
+Sep-16 19:01:44.553 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=60; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-16 19:01:44.569 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (14-04-2023 23:51 PDT)
+  System: Linux 6.2.0-32-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 20-internal-adhoc..src
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 9486@bioinfo [127.0.1.1]
+  CPUs: 20 - Mem: 46.8 GB (40.4 GB) - Swap: 8 GB (8 GB)
+Sep-16 19:01:44.583 [main] DEBUG nextflow.Session - Work-dir: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/work [ext2/ext3]
+Sep-16 19:01:44.594 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-16 19:01:44.599 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-16 19:01:44.610 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-16 19:01:44.619 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 21; maxThreads: 1000
+Sep-16 19:01:44.676 [main] DEBUG nextflow.Session - Session start
+Sep-16 19:01:44.961 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-16 19:01:44.969 [main] INFO  nextflow.Nextflow - MP - Q I I M E   P I P E L I N E
+===================================
+Reads        : /home/asum/sequencing/20230906_iontorrent/parse_seqs2/*.seqs
+Trunc Len    : 415
+Min Reads    : 100
+
+Sep-16 19:01:44.970 [main] INFO  nextflow.script.BaseScript - reads: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/*.seqs
+Sep-16 19:01:45.035 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.036 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.038 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-16 19:01:45.041 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=20; memory=46.8 GB; capacity=20; pollInterval=100ms; dumpInterval=5m
+Sep-16 19:01:45.072 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.073 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.077 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.077 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.080 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.080 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.083 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.083 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.091 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.091 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.093 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-16 19:01:45.093 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-16 19:01:45.095 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: IMPORT, MAKETABLE, MINREADS, DADA, DADARESULTS, MULTIQC, BARPLOT, TABULATE, CLASSIFY
+Sep-16 19:01:45.095 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > IMPORT
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DADA
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MINREADS
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DADARESULTS
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLASSIFY
+Sep-16 19:01:45.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BARPLOT
+Sep-16 19:01:45.098 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/asum/sequencing/20230906_iontorrent/parse_seqs2/; pattern: *.seqs; options: [type:dir]
+Sep-16 19:01:45.099 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MAKETABLE
+Sep-16 19:01:45.099 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-16 19:01:45.099 [main] DEBUG nextflow.Session - Session await
+Sep-16 19:01:45.231 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.233 [Task submitter] INFO  nextflow.Session - [7c/7f429b] Submitted process > IMPORT (Importing sequences B10_16s)
+Sep-16 19:01:45.238 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.238 [Task submitter] INFO  nextflow.Session - [f8/7bce49] Submitted process > IMPORT (Importing sequences B6_16s)
+Sep-16 19:01:45.241 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.242 [Task submitter] INFO  nextflow.Session - [8f/137a97] Submitted process > IMPORT (Importing sequences B7_16s)
+Sep-16 19:01:45.244 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.245 [Task submitter] INFO  nextflow.Session - [f2/19a75a] Submitted process > IMPORT (Importing sequences B9_16s)
+Sep-16 19:01:45.247 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.248 [Task submitter] INFO  nextflow.Session - [93/5e21e9] Submitted process > IMPORT (Importing sequences B8_16s)
+Sep-16 19:01:45.250 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.250 [Task submitter] INFO  nextflow.Session - [80/0493af] Submitted process > IMPORT (Importing sequences B3_16s)
+Sep-16 19:01:45.252 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.253 [Task submitter] INFO  nextflow.Session - [15/1f8668] Submitted process > IMPORT (Importing sequences B1_16s)
+Sep-16 19:01:45.255 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.255 [Task submitter] INFO  nextflow.Session - [b9/f2bf06] Submitted process > IMPORT (Importing sequences B11_16s)
+Sep-16 19:01:45.259 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.259 [Task submitter] INFO  nextflow.Session - [b5/94cac6] Submitted process > IMPORT (Importing sequences B2_16s)
+Sep-16 19:01:45.262 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.262 [Task submitter] INFO  nextflow.Session - [a7/a10184] Submitted process > IMPORT (Importing sequences B4_16s)
+Sep-16 19:01:45.265 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-16 19:01:45.265 [Task submitter] INFO  nextflow.Session - [f2/12f54f] Submitted process > IMPORT (Importing sequences B5_16s)
+Sep-16 19:01:55.108 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Sep-16 19:01:55.186 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] DADA
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: qza
+  port 1: (queue) OPEN  ; channel: sample_id
+  port 2: (cntrl) -     ; channel: $
+
+[process] MINREADS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: table
+  port 1: (queue) OPEN  ; channel: sample_id
+  port 2: (cntrl) -     ; channel: $
+
+[process] DADARESULTS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: repseqs
+  port 1: (queue) OPEN  ; channel: table
+  port 2: (queue) OPEN  ; channel: stats
+  port 3: (queue) OPEN  ; channel: foo
+  port 4: (queue) OPEN  ; channel: -
+  port 5: (cntrl) -     ; channel: $
+
+[process] CLASSIFY
+  status=ACTIVE
+  port 0: (value) bound ; channel: refseqs
+  port 1: (value) bound ; channel: reftax
+  port 2: (queue) OPEN  ; channel: repseqs
+  port 3: (queue) OPEN  ; channel: sample_id
+  port 4: (cntrl) -     ; channel: $
+
+[process] BARPLOT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MAKETABLE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Sep-16 19:01:55.189 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-16 19:01:55.189 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-16 19:01:55.193 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (11)
+Sep-16 19:01:55.251 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=11; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=11; peakCpus=11; peakMemory=0; ]
+Sep-16 19:01:55.310 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-16 19:01:55.332 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

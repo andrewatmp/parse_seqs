@@ -1,0 +1,1 @@
+load_data(2,["d__Bacteria;p__Actinobacteriota", "d__Bacteria;p__Firmicutes_D"],["index", "d__Bacteria;p__Actinobacteriota", "d__Bacteria;p__Firmicutes_D"],[{"index":"B10","d__Bacteria;p__Actinobacteriota":770.0,"d__Bacteria;p__Firmicutes_D":225.0}]);
