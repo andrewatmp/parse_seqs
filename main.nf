@@ -241,6 +241,7 @@ process MAKETABLE {
     tag 'Make Table'
     container 'andrewatmp/plot2'
     publishDir "$projectDir/results/results_${sample_id}", mode: 'copy'
+    stageInMode 'copy'
 
     input:
     tuple path(species_csv), val(sample_id)
