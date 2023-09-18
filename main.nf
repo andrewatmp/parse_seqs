@@ -241,6 +241,7 @@ process MAKETABLE {
     tag 'Make Table'
     container 'andrewatmp/plot2'
     stageInMode 'copy'
+    stageOutMode 'copy'
     publishDir "$projectDir/results/results_${sample_id}", mode: 'copy'
 
     input:
