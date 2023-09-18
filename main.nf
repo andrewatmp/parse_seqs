@@ -239,7 +239,7 @@ process BARPLOT {
 
 process MAKETABLE {
     tag 'Make Table'
-    container 'andrewatmp/plot'
+    container 'andrewatmp/plot2'
     publishDir "$projectDir/results/results_${sample_id}", mode: 'copy'
 
     input:
