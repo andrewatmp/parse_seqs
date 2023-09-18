@@ -247,12 +247,12 @@ process MAKETABLE {
 
     input:
     tuple path(species_csv), val(sample_id)
-    file(logo)
+    path(logo)
 
 
     output:
     path("${sample_id}.report.html")
-    file(logo)
+    path(logo)
 
     shell:
     """
