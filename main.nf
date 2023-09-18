@@ -241,10 +241,10 @@ process MAKETABLE {
     tag 'Make Table'
     container 'andrewatmp/plot2'
     publishDir "$projectDir/results/results_${sample_id}", mode: 'copy'
-    stageInMode 'copy'
 
     input:
     tuple path(species_csv), val(sample_id)
+    file(logo)
 
 
     output:
@@ -252,7 +252,7 @@ process MAKETABLE {
 
     shell:
     """
-    writehtml.py $species_csv --sample_name "${sample_id}" ${params.logo} "${sample_id}.report.html"
+    writehtml.py $species_csv --sample_name "${sample_id}" $logo "${sample_id}.report.html"
     """
 }
 
@@ -305,7 +305,7 @@ workflow {
     BARPLOT(joined_ch)
     
     species_ch = (BARPLOT.out.species)
-    MAKETABLE(species_ch)
+    MAKETABLE(species_ch, params.logo)
 
     multiqc_files = Channel.empty()
     // multiqc_files = multiqc_files.mix(FASTQC.out.fastqc_results)
