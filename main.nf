@@ -6,8 +6,9 @@ params.refseqs = "$projectDir/2022.10.backbone.full-length.fna.qza"
 params.reftax =  "$projectDir/2022.10.backbone.tax.qza"
 params.maxaccepts = 1
 params.artifacts = "$projectDir/artifacts"
-params.outdir = "$projectDir/results_gg"
 params.logo = "$projectDir/assets/logo.png"
+params.outdir = "s3://mp-bioinfo/test/results"
+
 
 log.info """\
     MP - Q I I M E   P I P E L I N E
@@ -242,7 +243,7 @@ process MAKETABLE {
     container 'andrewatmp/plot2'
     stageInMode 'copy'
     stageOutMode 'copy'
-    publishDir "$projectDir/results/results_${sample_id}", mode: 'copy'
+    publishDir "${params.outdir}/results/results_${sample_id}", mode: 'copy'
 
     input:
     tuple path(species_csv), val(sample_id)
