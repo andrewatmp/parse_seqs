@@ -251,12 +251,12 @@ process MAKETABLE {
 
 
     output:
-    path("${sample_id}.report.html")
+    path("${sample_id}_report.html")
     path(logo)
 
     shell:
     """
-    writehtml.py $species_csv --sample_name "${sample_id}" $logo "${sample_id}.report.html"
+    writehtml.py $species_csv --sample_name "${sample_id}" $logo "${sample_id}_report.html"
     """
 }
 
