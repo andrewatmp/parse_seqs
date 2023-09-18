@@ -252,6 +252,7 @@ process MAKETABLE {
 
     output:
     path("${sample_id}.report.html")
+    file(logo)
 
     shell:
     """
