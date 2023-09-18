@@ -7,7 +7,7 @@ params.reftax =  "$projectDir/2022.10.backbone.tax.qza"
 params.maxaccepts = 1
 params.artifacts = "$projectDir/artifacts"
 params.logo = "$projectDir/assets/logo.png"
-params.outdir = "s3://mp-bioinfo/test/results"
+params.outdir = "s3://mp-bioinfo/scratch/results"
 
 
 log.info """\
